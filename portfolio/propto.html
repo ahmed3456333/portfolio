@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Personal Portfolio
+    </title>
+    <head>
+     <meta charset="Utf-8">
+     <meta name="viewport" content="width-device-width, initial-scale-1.0">
+     <style>
+nav{
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+padding: 5px 0px;
+background:rgba(0, 0, 0, 0.747);
+backdrop-filter:blur(10px);
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+
+}
+nav h1{
+ font-family:brush script MT;
+ color: #ffff;
+}    
+nav h1:hover{
+ color: orangered;
+ text-shadow: 0 0 25px orangered,
+              0 0 50px;
+}
+nav span{
+ color: orangered
+}
+nav ul li{
+ display: inline;
+ list-style: none;
+ margin: 10px 30px;
+}
+nav ul li a{
+ text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ font-size: 18px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav ul li a span{
+ color: orangered;
+}
+nav ul li a span:hover{
+ color: #fff;
+ border-bottom: #fff;
+ text-shadow: 0 0 25px #fff, 0 0 50px #fff;
+}
+nav ul li a:hover{
+ color:orangered;
+ text-shadow: 0 0 25px orangered,0 0 50px orangered;
+}
+.home-content{
+ margin-left: 9%;
+ margin-top:15% ;
+}
+.home-content h2{
+ font-size: 42px;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.home-content h1{
+ font-size: 50px;
+ color: #212121;
+ margin-bottom: 20px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home-content h1 span{
+ color: orangered;
+}
+.home-content p{
+ color: #555;
+ line-height: 22px;
+ font-family: 'Lucida Sans';
+ font-size: 18px;
+}
+.home-content a{
+ background-color: #212121;
+ padding: 10px 18px;
+ text-decoration: none;
+ font-weight: bold;
+ color: #fff;
+ display:inline-block;
+ margin: 30px 0;
+ border-radius: 5px;
+}
+.home-content a:hover{
+ background-color:orangered;
+ text-shadow: 0 0 25px orangered,0 0 50px orangered;
+}
+.image{
+ height: 10px;
+ position: absolute;
+ left: 800px ;
+ bottom: 600px;
+}
+.ABOUT{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ padding: 10px 8px;
+ gap: 10em;
+}
+.ABOUT-img img{
+ position: relative;
+ width: 550px;
+ right: 100px;
+ top: 80px;
+}
+.ABOUT-content h2{
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ left: 200px;
+ font-size: 45px;
+ margin-right: 400px;
+ margin-top: 200px;
+}
+.ABOUT-content h2 span{
+ color: orangered;
+}
+.ABOUT-content h4{
+ font-family: 'Lucida Sans';
+ font-size: 30px;
+ color: orangered;
+ margin-top: 100px;
+}
+.ABOUT-content h4 span{
+ color: black;
+ 
+}
+.ABOUT-content p{
+ font-size: 23px;
+ font-family: 'Lucida Sans';
+ font-weight: lighter
+}
+.SKILLS{
+justify-content:right;
+ display: flex;
+ align-items: center;
+ padding: 10px 8px;
+ gap: 10em;
+}
+.SKILLS-img img{
+ position: relative;
+ width: 450px;
+ height: 350px;
+ right: 100px;
+ top: 100px;
+ border-radius: 100px;
+}
+.SKILLS-content h2{
+ color: orangered;
+ margin-right: 400px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 45px;    
+ margin-top: 100px;
+}
+.SKILLS-content h2 span{
+ color: black;
+}
+.SKILLS-content ul li{
+ font-size: 20px;
+ font-family: 'Lucida Sans';
+}
+.PROJECTS{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ padding: 10px 20px ;
+ margin-top: 200px;
+}
+.PROJECTS-content h1{
+ margin-left: 100px;
+font-size: 45px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.PROJECTS-content h1 span{
+ color: orangered;
+}
+.PROJECTS-content h2 {
+ margin-left: 140px;
+ color: orangered;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.PROJECTS-content h2 span{
+ color: black;
+}
+.PROJECTS-content p {
+ margin-left: 140px;
+ font-size: 25px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: bold; 
+}
+.PROJECTS-content p span{
+font-family: 'Lucida Sans';
+font-size: 18px;
+font-weight: lighter;
+}
+.PROJECTS-content p1{
+ margin-left: 140px;
+ font-size: 25px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: bold; 
+}
+.PROJECTS-content p1 span{
+ font-family: 'Lucida Sans';
+font-size: 18px;
+font-weight: lighter;
+}
+.PROJECTS-img img{
+ position: relative;
+ width: 550px;
+ right: 10px;
+ top: 70px;
+}
+.CONTACT{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ margin-top: 100px;
+}
+.CONTACT h1{
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 45px;
+ color: orangered;
+ margin-right: 250px;
+}
+.CONTACT h1 span{
+ color: black;
+}
+.CONTACT ul{
+ margin-right: 250px;
+}
+.CONTACT ul li{
+ font-size: 20px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: bold;
+ color: orangered;
+}
+.CONTACT ul li span{
+    color: black;
+}
+.CONTACT-img img{
+    position: relative;
+ border-radius:  50px 100px;
+ height: 400px;
+ margin-top: 105px;
+}
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+margin-top: 100px;
+}
+
+footer p {
+margin-bottom: 10px;
+}
+
+footer ul {
+padding: 0;
+list-style-type: none;
+}
+
+footer ul li {
+display: inline;
+margin: 0 10px;
+}
+
+footer ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+footer ul li a:hover {
+text-decoration: underline;
+}
+
+
+</style>
+     </style>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <h1>
+                   - AHMED<span>UMAR</span> FAROOQ SYED-
+                </h1>
+                <ul>
+                    <li><a href="#HOME"><span>HOME</span></a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#SKILLS">SKILLS</a></li>
+                    <li><a href="#PROJECTS">PROJECTS</a></li>
+                    <li><a href="#CONTACT">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <section class="HOME">
+             <div class="home-content">
+                <h2>
+                    Hiii
+                </h2>
+                <h1> 
+                I'm AHMED
+                </h1>
+               <p> With a passion for creating innovative and user-friendly websites<br>
+                a skilled web developer proficient in front-end and back-end <br>technologies.
+                 experience in specific skills or technologies like HTML, <br>CSS, JavaScript,
+                  React, Node.js, etc.</p> 
+                <a href="#">DONWOLADE RESUME</a>
+             </div>
+             <div class="image">
+             <img src="web developer.webp">
+             </div>
+            </section>
+            <section class="ABOUT">
+                <div class="ABOUT-img">
+                    <img src=img2>
+                </div>
+                <div class="ABOUT-content">
+                    <h2> ABOUT <span> ME</span></h2>
+                    <h4>  A COMPUTER <span>SCIENCE STUDENT</span></h4>
+                    <p>
+                         I am currently pursuing a degree in Computer Science.<br>
+                         I am deeply passionate about leveraging <br> to
+                        solve real-world problems and am <br>particularly interested in software<br>
+                        development and web development.<br>I have experience in HTML,CSS,JS,etc..
+                    </p>
+                </div>
+            </section> 
+            <section class="SKILLS">
+                
+                <div class="SKILLS-content">
+                    <h2>
+                        MY <span>SKILLS</span>
+                    </h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVA SCRIPT</li>
+                        <li>C Language</li>
+                        <li>JAVA etc.</li>
+                    </ul>
+                </div>
+                <div class="SKILLS-img">
+                    <img src="img3">
+                </div>
+            </section>
+            <section class="PROJECTS">
+                <div class="PROJECTS-img">
+                    <img src="iimg4"> 
+                </div>
+                <div class="PROJECTS-content">
+                    <h1>
+                        MY <span>PROJECTS</span> 
+                    </h1>
+                    <h2>
+                        PERSONAL <span>PORTFOLIO</span>
+                    </h2>
+                    <p>
+                        Description of the project:<br><span>A personal portfolio is a concise, online showcase of your skills, work, and achievements aimed at highlighting 
+                            your expertise to potential employers, clients, or collaborators.It typically includes sections<br>  like an introduction,
+                             biography, skills list, project samples, resume download link, contact information, and a footer with additional linksor legal information. 
+                            Its purpose is to establish your professional <br>presence, demonstrate your capabilities,
+                             and facilitate career advancement and networking opportunities. .</span>
+                    </p>
+                    <p1>
+                        Key technologies used: <span> HTML, CSS, JavaScript...</span>
+                    </p1>
+
+                </div>
+            </section>
+            <section class="CONTACT">
+                <div class="CONTACT-content">
+                    <h1>
+                        CONTACT<span> ME</span>
+                    </h1>
+                    <ul>
+                        <li>EMAIL:<span>syedahmedfarooq07@gmail.com</span></li>
+                        <li>LINKED IN: <span>AMHED UMAR FAROOQ SYED</span></li>
+                    </ul>
+                </div>
+                <div class="CONTACT-img">
+                    <img src="img6">
+                </div>
+            </section>
+            <footer>
+                <div class="footer">
+                    <p>&copy; 2024 AHMED. All rights reserved.</p>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </footer>
+            
+    </body>
+</html>
